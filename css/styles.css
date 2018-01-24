@@ -1,5 +1,124 @@
 /*GLOBAL STYLES*/
 * {
   box-sizing: border-box;
- /*border: 1px solid red;*/
+  font-family: 'Merriweather' , serif;
+ border: 1px solid red;
 }
+/*BASE STYLES*/
+header {
+  text-align: center;
+} 
+h4 {
+  margin: 0;
+}
+.main-headline {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  background-color: rgb(43, 52, 66);
+}
+p {
+  margin: 0;
+}
+header {
+  padding-bottom: 3px;
+}
+fieldset {
+  border: none;
+}
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+label {
+  color: rgb(168, 163, 163);
+  font-size: .85em;
+}
+input[type=text],
+input[type=email],
+input[type=telephone],
+select {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: #eeeff0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=telephone]:focus   {
+  border: 2px solid #555;
+  outline: none;
+}
+input[type=checkbox] {
+ margin-top: 15px;
+}
+input[type=radio] {
+  margin-top: 15px;
+ }
+ input[name=zipcode] {
+  width: 50%;
+ }
+ input[placeholder=Required] {
+  text-align: right;
+  font-style: italic;
+ }
+ input[type=submit] {
+  margin: 15px;
+  padding: 15px 10px;
+  width:  90%;
+  font-size: .95em;
+  background-color: rgb(31, 187, 171);
+  color: white;
+  border-radius: 4px;
+ }
+.nletter-format {
+  margin-top: 20px;
+}
+textarea {
+  margin-top: 15px;
+  width: 100%;
+  height: 100px;
+  background-color: #eeeff0;
+  outline: none; 
+}
+footer {
+  text-align: center;
+  color: rgb(168, 163, 163);
+  padding-top: 10px;
+  padding-bottom: 150px;
+  font-style: italic;
+  font-size: .85em;
+}
+/*CONTAINER STYLES*/
+.hdrpromo {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #000000;
+}
+.hdrpromo p {
+  font-size: .75em;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: rgb(168, 163, 163);
+}
+.contact-container {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+.newsletter-container {
+  padding-top: 20px;
+}
+.newsletter-container p{
+  font-size: .85em;
+  color: rgb(168, 163, 163);
+}
+/*MEDIA QUERIES*/
