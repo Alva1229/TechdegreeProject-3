@@ -2,7 +2,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Merriweather' , serif;
- border: 1px solid red;
+ /*border: 1px solid red;*/
 }
 /*BASE STYLES*/
 header {
@@ -37,7 +37,7 @@ label {
 }
 input[type=text],
 input[type=email],
-input[type=telephone],
+input[type=tel],
 select {
   width: 100%;
   padding: 12px 10px;
@@ -51,9 +51,14 @@ select {
 }
 input[type=text]:focus,
 input[type=email]:focus,
-input[type=telephone]:focus   {
+input[type=tel]:focus   {
   border: 2px solid #555;
   outline: none;
+  transition: all .5s ease-in;
+}
+textarea:focus {
+  border: 2px solid #555;
+  transition: all .5s ease-in;
 }
 input[type=checkbox] {
  margin-top: 15px;
@@ -69,9 +74,10 @@ input[type=radio] {
   font-style: italic;
  }
  input[type=submit] {
-  margin: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   padding: 15px 10px;
-  width:  90%;
+  width: 100%;
   font-size: .95em;
   background-color: rgb(31, 187, 171);
   color: white;
@@ -99,7 +105,7 @@ footer {
 .hdrpromo {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: 2px solid #000000;
+  border-bottom: 3px solid #000000;
 }
 .hdrpromo p {
   font-size: .75em;
@@ -122,3 +128,30 @@ footer {
   color: rgb(168, 163, 163);
 }
 /*MEDIA QUERIES*/
+@media (min-width: 768px) {
+.contact-container,
+.hdrpromo {
+   width: 500px;
+   margin: 0 auto;
+}
+ .formField {
+   display: flex;
+ }
+ label {
+   width: 40%;
+   margin-top: 20px;
+ }
+ label[for=state] {
+    width: 40%;
+    margin-top: 10px;
+  }
+ .zipField {
+    width: 70%;
+    display: flex;
+  }
+  .newsletter-container {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+}

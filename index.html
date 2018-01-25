@@ -20,27 +20,41 @@
         <div class="contact-container">
             <fieldset>
                 <legend>Contact Information</legend>
-                <label for="fullName">Full Name</label><br />
-                <input type="text" id="fullName" name="name" placeholder="Required"/><br />
-                <label for="emailAddress">Email Address</label><br />
-                <input type="email" id="emailAddress" name="email" placeholder="Required"/><br />
-                <label for="telephone">Phone Number</label><br />
-                <input type="telephone" id="telephone" name="phone"/><br />
-                <label for="streetAddress">Street Address</label><br />
-                <input type="text" id="streetAddress" name="address"/><br />
-                <label for="city">City</label><br />
-                <input type="text" id="city" name="city"/><br />
-                <label for="state">State</label><br />
-                <select id="state" name="state">
-                    <option value="" disabled selected>Choose State</option>
-                    <option>California</option>
-                    <option>New York</option>
-                    <option>Nevada</option>
-                    <option>Washignton</option>
-                    <option>Florida</option>
-                </select><br />
-                <label for="zipcode">Zip Code</label><br />
-                <input type="text" id="zipcode" name="zipcode"/>
+                <div class="formField">
+                    <label for="fullName">Full Name</label><br />
+                    <input required type="text" id="fullName" name="name" placeholder="Required"/><br />
+                </div>
+                <div class="formField">
+                    <label for="emailAddress">Email Address</label><br />
+                    <input required type="email" id="emailAddress" name="email" placeholder="Required"/><br />
+                </div>
+                <div class="formField">
+                    <label for="telephone">Phone Number</label><br />
+                    <input type="tel" id="telephone" name="phone"/><br />
+                </div>
+                <div class="formField">
+                    <label for="streetAddress">Street Address</label><br />
+                    <input type="text" id="streetAddress" name="address"/><br />
+                </div>
+                <div class="formField">
+                    <label for="city">City</label><br />
+                    <input type="text" id="city" name="city"/><br />
+                </div>
+                <div class="formField">
+                    <label for="state">State</label><br />
+                    <select id="state" name="state">
+                        <option value="" disabled selected>Choose State</option>
+                        <option>California</option>
+                        <option>New York</option>
+                        <option>Nevada</option>
+                        <option>Washignton</option>
+                        <option>Florida</option>
+                    </select><br />
+                </div>
+                <div class="zipField">
+                    <label for="zipcode">Zip Code</label><br />
+                    <input type="text" id="zipcode" name="zipcode"/>
+                </div>
             </fieldset>
         </div>
         <div class="newsletter-container">    
@@ -62,9 +76,9 @@
                 <label for="txtbtn">Plain text</label>
                 <p class="nletter-format">Other topics you'd like to hear about</p>
                 <textarea id="txtarea" name="txtarea"></textarea>
+                <input type="submit" value="Sign Up"/>
             </fieldset>
-        <input type="submit" value="Sign Up"></input>
-    </div>
+        </div>
     </form>
     <footer>
         Copyright The Code Review
