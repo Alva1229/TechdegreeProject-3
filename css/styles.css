@@ -69,7 +69,7 @@ input[type=radio] {
  input[name=zipcode] {
   width: 50%;
  }
- input[placeholder=Required] {
+ input::placeholder {
   text-align: right;
   font-style: italic;
  }
@@ -119,9 +119,11 @@ footer {
   padding-bottom: 10px;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
+ 
 }
 .newsletter-container {
   padding-top: 20px;
+  background-color: beige;
 }
 .newsletter-container p{
   font-size: .85em;
